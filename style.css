@@ -1,0 +1,122 @@
+/*.shuriken {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin: 60px auto;
+    animation: spin 10s linear infinite;
+  }
+  
+  .blade {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 55px 30px 0;
+    border-color: transparent #555 transparent transparent;
+  }
+  
+  .blade:nth-child(1) {
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+  }
+  
+  .blade:nth-child(2) {
+    top: -5px;
+    right: 4px;
+    transform: rotate(60deg);
+  }
+  
+  .blade:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+  }
+  
+  .blade:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+  }
+  
+  .center {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    background-color: #555;
+    top: 0px;
+    left: 0px;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  */
+
+  /* CSS for img shuriken*/
+  body {
+    background-color: black;
+    color: #fff;
+    font-size: x-large;
+  }
+    
+  h1 {
+    font-family: 'Varela Round', sans-serif;
+  }
+    
+  p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #myImage {
+    transition: transform 1s ease-in-out; /* ajouter une transition pour une animation plus douce */
+  }
+
+  #animate {
+    background-color: black;
+    border: none;
+  }
+
+  #sentence {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+  }
+
+  .rotate {
+    transform: rotate(360deg); /* faire une rotation complète */
+  }
+  
+  
+  /*Medias queries*/
+  @media screen and (max-width: 600px) {
+    main {
+        margin: 10px auto;
+        width: 400;
+    }
+    h1 {
+        font-size: large;
+    }
+        
+    p {
+        font-size: medium;
+    }
+  }
+
+  

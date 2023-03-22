@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Shuriken</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belleza&family=Cormorant+Garamond:wght@300;500;700&family=Kaushan+Script&family=Varela+Round&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Paroles d'Orelsan</h1>
+        <p>Cliquez sur le bouton ci-dessous pour générer une phrase aléatoire :</p>
+        <!--Bouton Shuriken-->
+        <div class="container">
+          <button id="animate" onclick="genererPhrase()">
+            <img id="myImage" src="assets/shuriken.svg" alt="Shuriken Orelsan">
+          </button>
+        </div>
+      </section>
+      <section>
+        <!--Phrase aléatoire-->
+        <p id="sentence"></p>
+      </section>
+    </main>
+    <!--Script JS-->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
